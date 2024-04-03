@@ -1,0 +1,133 @@
+<main>
+  <link rel="stylesheet" href="css/body.css">
+  <meta charset="UTF-8">
+  <ul class='slider'>
+    <li class='item' style="background-image: url('video/github.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Conclusion"</h2>
+        <p class='description'> Finis ! Merci d'avoir écouter ! Voici mon lien github pour tout les autres projets fait
+          et à venir </p>
+        <button class="button" onclick="openNewTab2()">
+          <span class="button-content">Consulter</span>
+        </button>
+      </div>
+    </li>
+    <li class='item'>
+      <div class="video-container">
+        <video id="videoFrame" class="full-width" autoplay loop muted>
+          <source src="video/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class='content'>
+        <h2 class='title'>Bienvenue dans mon PORTFOLIO</h2>
+        <p class='description'> AKARO JEUX Marvin, née le 17/07/2002, je suis actuellement en 2 ème année de BTS SIO
+          opion SLAM </p>
+        <p>Passionné de l'informatique, je souhaiterai poursuivre mes études dans cette filliale pour pouvoir en faire
+          mon métier !</p>
+        <p>Developpeur web / Front-End / UI/UX designer</p>
+
+      </div>
+
+    </li>
+    <li class='item' style="background-image: url('video/correspondmed.png')">
+
+      <div class='content'>
+        <h2 class='title1'>"Stage"</h2>
+        <p class='description1'> Un Site web fait du début à la fin par moi-même, Fait durant les 2 périodes de stage.
+        </p>
+        <p class='description1'> Ce site permet à mon maître de stage uniquement d'avoir un annuaire numérique, c'est à
+          dire,
+          un annuaire permettant d'avoir le nom, prénom, ville, profession, numero de téléphone et fax d'un particulier
+          auxquelles il est
+          affilié, c'est un moyen rapide et simple d'utilisation comme à la demande du maître de stage.
+        </p>
+
+        <button class="button" onclick="openNewTab()">
+          <span class="button-content">Consulter</span>
+        </button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('video/sushiapp.png')">
+      <div class='content'>
+        <h2 class='title'>"Projet Sushi-App"</h2>
+        <p class='description'>
+          Lors de ce projet fait en seconde année, j'ai du créer un site web pour commander des Sushi.</p>
+        <p>Il est actuellement non finit, mais je compte bien le transformer en projet personnel pour le finaliser de
+          mon côté! </p>
+          <button class="button" onclick="openNewTab4()">
+            <span class="button-content">Consulter</span>
+          </button>
+      </div>
+    </li>
+    <li class='item'>
+      <div class="video-container">
+        <video id="videoFrame" class="full-width" autoplay loop muted>
+          <source src="video/cv fond.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class='content'>
+        <h2 class='title'>"CV AKARO JEUX Marvin"</h2>
+        <p class='description'> Ce CV représente à la base un projet personnel fait avant mes études en BTS SIO
+          (07/2021)</p>
+        <button class="button" onclick="openNewTab1()">
+          <span class="button-content">Consulter</span>
+        </button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('video/casque.jpg')">
+      <div class='content'>
+        <h2 class='title1'>"Veille Technologique"</h2>
+        <p class='description1'> Ma veille Technologique portera sur la réalité virtuelle.
+          En quoi est une "Nouvelle Technologique" et la rivalité des grosses marques sur cet outil </p>
+        <button class="button" onclick="openNewTab3()">
+          <span class="button-content">Consulter</span>
+        </button>
+      </div>
+
+    </li>
+  </ul>
+  <nav class='nav'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="js/body.js"></script>
+<script>
+  // Attend que le contenu de la page soit chargé
+  window.addEventListener('DOMContentLoaded', (event) => {
+    // Sélectionne l'iframe de la vidéo
+    var video = document.getElementById('videoFrame');
+    // Lance la vidéo
+    video.play();
+  });
+
+  function openNewTab() {
+    // Ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet
+    window.open("https://corresponmed.000webhostapp.com/", "_blank");
+  }
+
+  function openNewTab1() {
+    // Ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet
+    window.open("https://akarojeuxmarvin.online/", "_blank");
+  }
+
+  function openNewTab2() {
+    // Ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet
+    window.open("https://github.com/Marvin17007", "_blank");
+  }
+
+  function openNewTab3() {
+    // Ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet
+    window.open("https://www.canva.com/design/DAGA1vNTj9M/Z3ixmNFiYKiqTeuUmL9XqA/edit", "_blank");
+  }
+
+  function openNewTab4() {
+    // Ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet
+    window.open("https://marvin17007.github.io/SushiApp/", "_blank");
+  }
+</script>
+
+
